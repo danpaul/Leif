@@ -2,23 +2,30 @@
 
           LEIF
 
-About:
-  Leif is an experimental flat file key/value store for PHP. I would not
-  consider Leif production reay, it's more of a private test project. I am
-  instersted in lightweight frameworks like Stacey CMS (http://www.staceyapp.com/) 
-  and wanted a small database to allow for some dynamic content for mostly static 
-  sites. I wanted the database to be small and simple, something that could be
-  contained within the site folder so that an entire dynamic site can simply be
-  copy and pasted between between dime-a-dozen PHP hosts with little to no 
-  setup or configuration.
+Author: Dan Breczinski
 
-  Leif also serializes and deserializes PHP objects. These objects can either
-  be serialized using PHP's serialize or JSON method. The stored objects can
-  be returned as either an unserialized object or as raw JSON.
+Created: 2013-01-01
+
+About:
+
+  Leif is an experimental flat file key/value store for PHP. It's still in the
+  development stages. You are free to use it but I make no claims to its 
+  reliability at this stage.
+
+  Leif grew out of an interest in lightweight CMS systems like Stacey 
+  (http://www.staceyapp.com/) which rely on flat file sytems. My idea was
+  to creat a data store that can be imbedded into projects and applications.
+  I wanted something that would allow for some dynamic content on a site
+  without having to configure and use a database, allowing a site's data
+  to be stored with the site and allowing site owners to simply copy/paste
+  their projects between hosts.
+
+  Objects can are serialized using the `serlialize` php function or using
+  `json_encode`, and can be returned either deserialized or as raw json.
 
   The storage method relys on hashing the key and then creating a directory
-  based on a cerain number of characters (the default is 3) in the hash. For
-  instance if the hash is '29246d...' the default storage location would be
+  based on a certain number of bytes in the hash (the default is 3). For
+  instance, if the hash is '29246d...' the default storage location would be
   data/2/9/2/46d... This ensures a unique folder for each key and is intended
   to create a good distribution of keys amongst directories.
 
