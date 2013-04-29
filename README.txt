@@ -8,13 +8,13 @@ About:
   instersted in lightweight frameworks like Stacey CMS (http://www.staceyapp.com/) 
   and wanted a small database to allow for some dynamic content for mostly static 
   sites. I wanted the database to be small and simple, something that could be
-  contained within the project/application/site folder so that an entire dynamic
-  site could simply be copy and pasted between between dime-a-dozen PHP hosts
-  with little to no setup or configuration.
+  contained within the site folder so that an entire dynamic site can simply be
+  copy and pasted between between dime-a-dozen PHP hosts with little to no 
+  setup or configuration.
 
   Leif also serializes and deserializes PHP objects. These objects can either
   be serialized using PHP's serialize or JSON method. The stored objects can
-  be returned as either unserialized objects or as raw JSON.
+  be returned as either an unserialized object or as raw JSON.
 
   The storage method relys on hashing the key and then creating a directory
   based on a cerain number of characters (the default is 3) in the hash. For
