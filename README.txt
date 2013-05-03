@@ -12,15 +12,15 @@ About:
   development stages. You are free to use it but I make no claims to its 
   reliability at this stage.
 
-  Leif grew out of an interest in lightweight CMS systems like Stacey 
-  (http://www.staceyapp.com/) which rely on flat file sytems. My idea was
-  to creat a data store that can be imbedded into projects and applications.
+  Leif grew out of an interest in lightweight CMSs like Stacey 
+  (http://www.staceyapp.com/) which rely on flat files to store data. My idea
+  was to creat a data store that can be imbedded into projects and applications.
   I wanted something that would allow for some dynamic content on a site
   without having to configure and use a database, allowing a site's data
   to be stored with the site and allowing site owners to simply copy/paste
   their projects between hosts.
 
-  Objects can are serialized using the `serlialize` php function or using
+  Objects are serialized using the `serlialize` php function or using
   `json_encode`, and can be returned either deserialized or as raw json.
 
   The storage method relys on hashing the key and then creating a directory
