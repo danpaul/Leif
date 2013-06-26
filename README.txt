@@ -1,10 +1,6 @@
 /*******************************************************************************
 
-          LEIF
-
-Author: Dan Breczinski
-
-Created: 2013-01-01
+Note: for a quick overview, see example.php.
 
 About:
 
