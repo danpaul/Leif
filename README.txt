@@ -13,7 +13,7 @@ About:
   was to creat a data store that can be imbedded into projects and applications.
   I wanted something that would allow for some dynamic content on a site
   without having to configure and use a database, allowing a site's data
-  to be stored with the site and allowing site owners to simply copy/paste
+  to be stored with the site and allowing site owner to simply copy/paste
   their projects between hosts.
 
   Objects are serialized using the `serlialize` php function or using
@@ -58,8 +58,9 @@ About:
     $value --  Takes a key value of any hashable type, binary data to be 
       serialized.
     $encoding -- optional -- takes either bool (default is true) or
-      string 'json' or 'serialize' -- if default true is used,
-      default_encoding will be used. If false, no enconding will be used.
+      string 'json' or 'serialize' -- if default (true) is used,
+      default_encoding will be used (set in constructor). If false, no 
+      enconding will be used.
   Return:
     Returns true if successful.
     Returns false if key already exists.
@@ -126,6 +127,14 @@ About:
   Public Function:
     Takes key, returns true if it is a valid key false if it isn't.
 
+*******************************************************************************/
+
+
+
+/*******************************************************************************
+                                
+                                PRIVATE
+                                
 *******************************************************************************/
 
 /*******************************************************************************
