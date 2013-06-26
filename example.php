@@ -10,15 +10,15 @@
 
 	$leif->create('foo', 'bar');
 
-	print($leif->read(foo)); //~> 'bar'
+	print($leif->read('foo')); //~> 'bar'
 
 	$leif->update('foo', 'bat');
 
-	print($leif->read(foo)); //~> 'bat'
+	print($leif->read('foo')); //~> 'bat'
 
 	$leif->upsert('foo', 'biz'); //updates if key exists, otherwise creates
 
-	print($leif->read(foo)); //~> 'biz'
+	print($leif->read('foo')); //~> 'biz'
 
 	$leif->delete('foo');
 
@@ -30,9 +30,9 @@
 
 	$my_array = array(1,2,3);
 
-	$leif->create('array', $my_array);
+	$leif->create('my_array', $my_array);
 
-	$new_array = $leif->read('array');
+	$new_array = $leif->read('my_array');
 
 	var_dump($new_array[0]); //~> array(3){[0]=? 1...
 
